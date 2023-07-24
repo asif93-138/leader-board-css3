@@ -2,7 +2,36 @@
 body {
     font-family: 'Poppins', sans-serif;
     background-color: #F3F1FF;
+    margin: 0;
 }
+header {background-color: blue;}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 900px;
+    margin: auto;
+}
+nav div {
+    display: flex;
+    align-items: center;
+    color: white;
+}
+nav img {
+    width: 50px;
+    height: 50px;
+    padding: 0 10px;
+}
+ul {
+    list-style-type:none;
+    display: flex;
+    align-items: center;
+}
+li {
+    color: white;
+    padding: 0 10px;
+}
+
 main {
     display: flex;
     flex-direction: column;
@@ -94,7 +123,24 @@ hr {
 .fa-star.empty {
     color: #AEAEAE;
 }
-@media only screen and (max-width:688px) {
+.hide {display: none;}
+@media only screen and (max-width:650px) {
+    header {
+        text-align: center;
+        width: 100%;
+    }
+    nav div {justify-content: center;}
+    nav {
+    	display: block;
+    	
+    	width: 100%;
+    	margin: auto;
+    }
+    ul {
+        display: block;
+        padding: 0;
+    }
+    li {padding: 10px;}
     .container {
         width: 100%;
     }
@@ -106,7 +152,7 @@ hr {
         flex-direction: column;
     }
 }
-@media only screen and (min-width: 688px) and (max-width: 992px) {
+@media only screen and (min-width: 651px) and (max-width: 992px) {
     .container {
         width: 100%;
     }
